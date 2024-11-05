@@ -1,0 +1,66 @@
+.add-student-form {
+    max-width: 400px;          /* Set a maximum width for the form */
+    margin: 0 auto;            /* Center the form horizontally */
+    padding: 20px;             /* Add padding inside the form */
+    border: 1px solid #ccc;    /* Add a light gray border */
+    border-radius: 5px;        /* Round the corners */
+    background-color: #f9f9f9; /* Set a light background color */
+}
+
+.add-student-form h2 {
+    text-align: center;         /* Center align the heading */
+    margin-bottom: 20px;       /* Add space below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px;       /* Space between form groups */
+}
+
+.form-group label {
+    display: block;             /* Make labels block elements */
+    margin-bottom: 5px;        /* Space below labels */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;               /* Make inputs and selects full width */
+    padding: 8px;             /* Add padding inside inputs and selects */
+    border: 1px solid #ccc;    /* Light gray border */
+    border-radius: 4px;        /* Round the corners */
+    box-sizing: border-box;     /* Include padding and border in element's total width */
+}
+
+/* Styles for error messages */
+.error {
+    color: red;                /* Set error message color to red */
+    font-size: 14px;          /* Set font size for error messages */
+}
+
+/* Button styles */
+button {
+    width: 100%;               /* Full width button */
+    padding: 10px;             /* Add padding */
+    border: none;              /* Remove default border */
+    border-radius: 4px;        /* Round the corners */
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text color */
+    font-size: 16px;           /* Font size for button */
+    cursor: pointer;           /* Pointer cursor on hover */
+}
+
+button:disabled {
+    background-color: #ccc;    /* Gray background for disabled button */
+    cursor: not-allowed;       /* Not-allowed cursor */
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049; /* Darker green on hover (only when not disabled) */
+}
+
+.success-message {
+    margin-top: 15px;        /* Space above the success message */
+    color: green;            /* Green text color for success */
+    font-weight: bold;       /* Bold text for visibility */
+    text-align: center;      /* Center the message */
+    font-size: 16px;         /* Font size for success message */
+}

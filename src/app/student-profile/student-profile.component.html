@@ -1,0 +1,29 @@
+<div class="student-profile-container">
+    <h2>Student Profile</h2>
+    
+    <div *ngIf="errorMessage" class="error">
+      {{ errorMessage }}
+    </div>
+  
+    <div *ngIf="student">
+      <p><strong>ID:</strong> {{ student.id }}</p>
+      <p><strong>Name:</strong> {{ student.name }}</p>
+      <p><strong>Age:</strong> {{ student.age }}</p>
+      <p><strong>Gender:</strong> {{ student.gender }}</p>
+  
+      <h3>School Details</h3>
+      <div *ngIf="student.school; else noSchoolData">
+        <p><strong>School ID:</strong> {{ student.school.id }}</p>
+        <p><strong>School Name:</strong> {{ student.school.schoolName || 'N/A' }}</p>
+        <p><strong>Location:</strong> {{ student.school.location || 'N/A' }}</p>
+        <p><strong>Principal Name:</strong> {{ student.school.principalName || 'N/A' }}</p>
+      </div>
+      <ng-template #noSchoolData>
+        <p class="no-school-data">No school information available.</p>
+      </ng-template>
+    </div>
+  
+    <div *ngIf="!student && !errorMessage" class="loading-message">
+      <p>Loading student details...</p>
+    </div>
+</div>

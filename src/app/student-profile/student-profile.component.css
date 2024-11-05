@@ -1,0 +1,53 @@
+.student-profile-container {
+    padding: 20px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    max-width: 400px; /* Limit width for a compact look */
+    margin: 40px auto; /* Center the container */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    color: #444; /* Darker text color for contrast */
+}
+
+h2 {
+    font-size: 26px; /* Title size */
+    color: #2c3e50; /* Darker blue color for title */
+    text-align: center; /* Center align title */
+    margin-bottom: 15px; /* Spacing below the title */
+}
+
+h3 {
+    font-size: 20px; /* Subheading size */
+    color: #2980b9; /* Blue color for subheadings */
+    margin-top: 15px; /* Space above subheadings */
+    margin-bottom: 10px; /* Space below subheadings */
+}
+
+.student-info p {
+    font-size: 16px; /* Standard font size */
+    margin: 8px 0; /* Spacing between paragraphs */
+    line-height: 1.6; /* Comfortable line height */
+}
+
+.error {
+    color: #e74c3c; /* Bright red for errors */
+    font-weight: bold; /* Bold font for emphasis */
+    margin-bottom: 15px; /* Spacing below error messages */
+    text-align: center; /* Center align error messages */
+}
+
+.no-school-data {
+    font-style: italic; /* Italic style for no data messages */
+    color: #7f8c8d; /* Gray color for no data messages */
+    text-align: center; /* Center align no data messages */
+}
+
+.loading-message {
+    text-align: center; /* Center align loading messages */
+    color: #95a5a6; /* Light gray for loading text */
+}
+
+.student-info {
+    border-top: 2px solid #3498db; /* Blue top border for the info section */
+    padding-top: 15px; /* Space above the info section */
+}

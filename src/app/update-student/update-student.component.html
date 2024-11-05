@@ -1,0 +1,25 @@
+<div *ngIf="student">
+    <h2>Edit Student</h2>
+    <form (ngSubmit)="updateStudent()">
+      <label for="name">Name:</label>
+      <input [(ngModel)]="student.name" id="name" name="name" required />
+      
+      <label for="age">Age:</label>
+      <input [(ngModel)]="student.age" id="age" name="age" type="number" required />
+      
+      <label for="gender">Gender:</label>
+      <select [(ngModel)]="student.gender" id="gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      
+      <label for="schoolId">School ID:</label>
+      <input [(ngModel)]="student.schoolId" id="schoolId" name="schoolId" type="number" />
+      
+      <button type="submit">Update</button>
+      <button type="button" (click)="router.navigate(['/show-student'])">Cancel</button>
+    </form>
+    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  </div>
+  
